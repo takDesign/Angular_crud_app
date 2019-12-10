@@ -1,0 +1,11 @@
+<div *ngIf="jellyfish">
+
+  <h2>{{jellyfish.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{jellyfish.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="jellyfish.name" placeholder="name" />
+    </label>
+  </div>
+
+</div>

@@ -1,0 +1,9 @@
+<h2>My jellyfishes</h2>
+<ul class="jellyfishes">
+  <li *ngFor="let jellyfish of jellyfishes" [class.selected]="jellyfish === selectedJellyfish"
+    (click)="onSelect(jellyfish)">
+    <span class="badge">{{jellyfish.id}}</span> {{jellyfish.name}}
+  </li>
+</ul>
+
+<app-jellyfish-detail [jellyfish]="selectedJellyfish"></app-jellyfish-detail>
